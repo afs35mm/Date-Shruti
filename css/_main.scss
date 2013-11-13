@@ -1,0 +1,26 @@
+$beige: #ffe7d8;
+$purple: #2f1c3a;
+$max-width:1024px;
+
+html, body, #wrapper {height:100%; font-family:sans-serif;}
+
+body{
+	background: $beige;
+	font-size:100;
+}
+
+#head{
+	width:100%;
+	background: $purple;
+	min-height:100px;
+	img{
+		max-width:100%;
+	}
+}
+#container{
+	
+}
+.center{
+	max-width: $max-width;
+	margin: 0 auto;
+}
