@@ -725,6 +725,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
 html, body, #wrapper {
   height: 100%;
   font-family: sans-serif; }
@@ -743,3 +760,25 @@ body {
 .center {
   max-width: 1024px;
   margin: 0 auto; }
+
+#questions {
+  max-width: 1024px;
+  min-height: 400px;
+  background: red;
+  overflow: hidden; }
+  #questions #left {
+    width: 30%;
+    min-height: 160px;
+    background: blue;
+    float: left; }
+  #questions #right {
+    width: 70%;
+    min-height: 160px;
+    background: yellow;
+    float: left; }
+    #questions #right #head {
+      backgorund: green;
+      min-height: 60px; }
+    #questions #right #main {
+      backgorund: yellow;
+      min-height: 60px; }

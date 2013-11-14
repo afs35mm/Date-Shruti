@@ -24,3 +24,29 @@ body{
 	max-width: $max-width;
 	margin: 0 auto;
 }
+#questions{
+	max-width: $max-width;
+	min-height:400px;
+	background:red;
+	overflow:hidden;
+	#left{
+		width: 30%;
+		min-height:160px;
+		background:blue;
+		float:left;
+	}
+	#right{
+		width:70%;
+		min-height:160px;
+		background:yellow;
+		float:left;
+		#head{
+			backgorund:green;
+			min-height:60px;
+		}
+		#main{
+			backgorund:yellow;
+			min-height:60px;
+		}
+	}		
+}

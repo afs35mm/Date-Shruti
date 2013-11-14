@@ -13,12 +13,8 @@ DS.App = (function(){
 	};
 
 	var init = function(){
-		$("#element").defaultPluginName({
+		$("#slideContainer").simpleSlider({
 		    say: "a custom value"
-		});
-
-		$("#element2").defaultPluginName({
-		    say: "afs"
 		});
 		//console.log('inited!');		
 	};
