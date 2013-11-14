@@ -1,14 +1,14 @@
-{
+var data = {
   "name": "date-shruti", 
   "questions": [
     {
       "title": "What is your favorite number?", 
-      "numberImg" : "no1",
+      "numberImg" : "../img/no1.jpg",
       "choices": [
         "zyx-sdfoj sdfkhs dfkhs fkhs fkshf sfh sdf",
         "However IE6 and IE7 need special treatment.",
         "zyx-sdfoj sdfkhs dfkhs fkhs fkshf sfh sdf" ,
-        "However IE6 and IE7 need special treatment."
+        "However IE6 and IE7 need special treatment.",
       ]
     }, 
     {

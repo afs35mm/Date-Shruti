@@ -11,8 +11,8 @@ body{
 
 #head{
 	width:100%;
-	background: $purple;
 	min-height:100px;
+	background:$purple;
 	img{
 		max-width:100%;
 	}
@@ -27,25 +27,24 @@ body{
 #questions{
 	max-width: $max-width;
 	min-height:400px;
-	background:red;
 	overflow:hidden;
 	#left{
 		width: 30%;
 		min-height:160px;
-		background:blue;
 		float:left;
+		img{
+			float:right;
+			padding-top:2.3em;
+		}
 	}
 	#right{
 		width:70%;
 		min-height:160px;
-		background:yellow;
 		float:left;
-		#head{
-			backgorund:green;
+		#questionCopy{
 			min-height:60px;
 		}
 		#main{
-			backgorund:yellow;
 			min-height:60px;
 		}
 	}		

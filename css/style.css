@@ -752,8 +752,8 @@ body {
 
 #head {
   width: 100%;
-  background: #2f1c3a;
-  min-height: 100px; }
+  min-height: 100px;
+  background: #2f1c3a; }
   #head img {
     max-width: 100%; }
 
@@ -764,21 +764,19 @@ body {
 #questions {
   max-width: 1024px;
   min-height: 400px;
-  background: red;
   overflow: hidden; }
   #questions #left {
     width: 30%;
     min-height: 160px;
-    background: blue;
     float: left; }
+    #questions #left img {
+      float: right;
+      padding-top: 2.3em; }
   #questions #right {
     width: 70%;
     min-height: 160px;
-    background: yellow;
     float: left; }
-    #questions #right #head {
-      backgorund: green;
+    #questions #right #questionCopy {
       min-height: 60px; }
     #questions #right #main {
-      backgorund: yellow;
       min-height: 60px; }

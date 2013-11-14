@@ -4,7 +4,7 @@ var DS = DS || {};
 DS.App = (function(){
 
 	var config = {
-
+		currentQuestion: 0
 	};
 
 
@@ -12,11 +12,19 @@ DS.App = (function(){
 		
 	};
 
-	var init = function(){
-		$("#slideContainer").simpleSlider({
-		    say: "a custom value"
+	var injectTemplate = function(){
+		
+		var source   = $("#questions-template").html();
+		var template = Handlebars.compile(source);
+
+		$.getJSON( "js/data.json", function( data ) {
+			var compiledCurrentQuestion = data.questions[config.currentQuestion];
+			$('#questions').html(template(compiledCurrentQuestion));
 		});
-		//console.log('inited!');		
+	};
+
+	var init = function(){
+		injectTemplate();
 	};
 
 	return {
