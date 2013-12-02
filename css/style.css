@@ -742,6 +742,14 @@ table {
 .cf {
   *zoom: 1; }
 
+* {
+  box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #2f1c3a; }
+
 html, body, #wrapper {
   height: 100%;
   font-family: sans-serif; }
@@ -761,22 +769,50 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
-#questions {
+.cta {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
+  line-height: 2em;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: .3em 1.6em;
+  background: #792c41;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #792c41), color-stop(100%, #3d1f3b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #792c41 0%, #3d1f3b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#792c41', endColorstr='#3d1f3b',GradientType=0 );
+  /* IE6-9 */
+  color: #ffe7d8;
+  font-weight: 200; }
+
+#main {
   max-width: 1024px;
-  min-height: 400px;
-  overflow: hidden; }
-  #questions #left {
-    width: 30%;
-    min-height: 160px;
-    float: left; }
-    #questions #left img {
-      float: right;
-      padding-top: 2.3em; }
-  #questions #right {
-    width: 70%;
-    min-height: 160px;
-    float: left; }
-    #questions #right #questionCopy {
-      min-height: 60px; }
-    #questions #right #main {
-      min-height: 60px; }
+  padding: 3.125em; }
+  #main > div {
+    float: left;
+    min-height: 20px; }
+  #main #headShot {
+    width: 31.49%; }
+    #main #headShot img {
+      max-width: 100%; }
+  #main #intro {
+    width: 68.5%;
+    padding-left: 3.125em;
+    font-size: 1.5em;
+    line-height: 1.3333em; }
+    #main #intro p {
+      padding-bottom: 2.08em; }
