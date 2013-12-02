@@ -18,6 +18,13 @@ body{
 	font-size:100;
 }
 
+.wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto  (-$padding-default);
+}
+
 #head{
 	width:100%;
 	min-height:100px;
@@ -65,9 +72,6 @@ body{
 	padding:$padding-default;
 	font-size:1.5em;
 	line-height:1.3333em;
-	height: 100%;
-	margin-bottom:-40px;
-	background:red;
 	> div{
 		float:left;
 		min-height:20px;
@@ -92,38 +96,14 @@ body{
 			width:70%;
 			float:left;
 		}
-	}
-	// #left{
-	// 	min-height:160px;
-	// 	float:left;
-	// 	background:red;
-	// 	width:50%;
-	// }
-	// #right{
-	// 	min-height:160px;
-	// 	float:left;
-	// 	width:50%;
-	// 	background:blue;
-	// 	max-width:633px;
-	// 	p{
-	// 		font-family: brandon-grotesque, sans-serif;
-	// 		font-size:1.3em;
-	// 	}
-	// 	#intro{
-	// 		padding-left:50px;
-	// 	}
-	// 	#questionCopy{
-	// 		min-height:60px;
-	// 	}
-	// 	#main{
-	// 		min-height:60px;
-	// 	}
-	// }			
+	}	
 }
 
 #footer{
 	background:$purple;
 	color:$beige;
+	height: $padding-default; /* .push must be the same height as .footer */
+
 }
 
 

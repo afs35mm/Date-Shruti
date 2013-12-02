@@ -758,6 +758,12 @@ body {
   background: #ffe7d8;
   font-size: 100; }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -3.125em; }
+
 #head {
   width: 100%;
   min-height: 100px;
@@ -804,10 +810,7 @@ body {
   max-width: 1024px;
   padding: 3.125em;
   font-size: 1.5em;
-  line-height: 1.3333em;
-  height: 100%;
-  margin-bottom: -40px;
-  background: red; }
+  line-height: 1.3333em; }
   #main > div {
     float: left;
     min-height: 20px; }
@@ -829,4 +832,6 @@ body {
 
 #footer {
   background: #2f1c3a;
-  color: #ffe7d8; }
+  color: #ffe7d8;
+  height: 3.125em;
+  /* .push must be the same height as .footer */ }

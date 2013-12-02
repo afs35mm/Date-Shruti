@@ -17,41 +17,42 @@
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="wrapper">
+                <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <header id="head">
+            <!-- Add your site or application content here -->
+            <header id="head">
+                <div class="center">
+                    <img src="img/header.jpg" alt="">
+                </div>
+            </header>
+            
             <div class="center">
-                <img src="img/header.jpg" alt="">
-            </div>
-        </header>
-        
-        <div class="center">
-           <div id="main" class="cf">
-               <div id="questions">
-                    <script id="questions-template" type="text/x-handlebars-template">
-                      <div id="left">
-                            <img src="img/{{numberImg}}.png" alt="">            
-                        </div>
-                        <div id="right">
-                            <div id="questionCopy">
-                                {{title}}    
+               <div id="main" class="cf">
+                   <div id="questions">
+                        <script id="questions-template" type="text/x-handlebars-template">
+                          <div id="left">
+                                <img src="img/{{numberImg}}.png" alt="">            
                             </div>
-                            <div id="">
-                                 <ul>
-                                    {{#each choices}}
-                                        <li>{{@index}}: {{this}}</li>
-                                    {{/each}}
-                                </ul>
+                            <div id="right">
+                                <div id="questionCopy">
+                                    {{title}}    
+                                </div>
+                                <div id="">
+                                     <ul>
+                                        {{#each choices}}
+                                            <li>{{@index}}: {{this}}</li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </script>
+                        </script>
+                    </div>
                 </div>
             </div>
-        </div>
-        
+        </div>  
         <footer id="footer">
             
         </footer>
