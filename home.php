@@ -38,7 +38,7 @@
                             <div id="questionCopy">
                                 {{title}}    
                             </div>
-                            <div id="main">
+                            <div id="xyz">
                                  <ul>
                                     {{#each choices}}
                                         <li>{{@index}}: {{this}}</li>

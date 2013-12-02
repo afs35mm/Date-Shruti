@@ -30,6 +30,8 @@ body{
 .center{
 	max-width: $max-width;
 	margin: 0 auto;
+	min-height:100%;
+
 }
 
 .cta{
@@ -61,6 +63,11 @@ body{
 #main{
 	max-width: $max-width;
 	padding:$padding-default;
+	font-size:1.5em;
+	line-height:1.3333em;
+	height: 100%;
+	margin-bottom:-40px;
+	background:red;
 	> div{
 		float:left;
 		min-height:20px;
@@ -72,10 +79,18 @@ body{
 	#intro{
 		width:68.5%;
 		padding-left:$padding-default;
-		font-size:1.5em;
-		line-height:1.3333em;
 		p{
 			padding-bottom:2.08em;
+		}
+	}
+	#questions{
+		#left{
+			width:30%;
+			float:left;
+		}
+		#right{
+			width:70%;
+			float:left;
 		}
 	}
 	// #left{
@@ -105,3 +120,11 @@ body{
 	// 	}
 	// }			
 }
+
+#footer{
+	background:$purple;
+	color:$beige;
+}
+
+
+

@@ -22,25 +22,39 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="head">
+        <header id="head">
             <div class="center">
                 <img src="img/header.jpg" alt="">
             </div>
-        </div>
+        </header>
         
         <div class="center">
            <div id="main" class="cf">
-               <div id="headShot">
-                   <img src="img/headshot.jpg" alt="">
-               </div>
-               <div id="intro">
-                    <p>this is shruti She is the best. Born in PA and currently living in Brooklyn, Shruti is a writer, traveller, and an all around top notch human being. (We don't have to tell you how pretty she is, see for yourself)</p>
-                    <p>We (her friends) don't like that she has to use those meat market dating sites to meet guys. So we decided to make Shruti her own site. As in, for dating only her. Welcome to Date Shruti! But, listen, we can't let just anyone in on the Shruti magic. So first you have to take this test, do great, and you'll win a date!amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <a class="cta" href="#">let's do this!</a>
-               </div>
+               <div id="questions">
+                    <script id="questions-template" type="text/x-handlebars-template">
+                      <div id="left">
+                            <img src="img/{{numberImg}}.png" alt="">            
+                        </div>
+                        <div id="right">
+                            <div id="questionCopy">
+                                {{title}}    
+                            </div>
+                            <div id="">
+                                 <ul>
+                                    {{#each choices}}
+                                        <li>{{@index}}: {{this}}</li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </script>
+                </div>
             </div>
         </div>
-    
+        
+        <footer id="footer">
+            
+        </footer>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

@@ -767,7 +767,8 @@ body {
 
 .center {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 100%; }
 
 .cta {
   -webkit-border-radius: 3px;
@@ -801,7 +802,12 @@ body {
 
 #main {
   max-width: 1024px;
-  padding: 3.125em; }
+  padding: 3.125em;
+  font-size: 1.5em;
+  line-height: 1.3333em;
+  height: 100%;
+  margin-bottom: -40px;
+  background: red; }
   #main > div {
     float: left;
     min-height: 20px; }
@@ -811,8 +817,16 @@ body {
       max-width: 100%; }
   #main #intro {
     width: 68.5%;
-    padding-left: 3.125em;
-    font-size: 1.5em;
-    line-height: 1.3333em; }
+    padding-left: 3.125em; }
     #main #intro p {
       padding-bottom: 2.08em; }
+  #main #questions #left {
+    width: 30%;
+    float: left; }
+  #main #questions #right {
+    width: 70%;
+    float: left; }
+
+#footer {
+  background: #2f1c3a;
+  color: #ffe7d8; }
