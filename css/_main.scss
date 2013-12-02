@@ -5,7 +5,6 @@ $padding-default:3.125em;
 
 *{
 	box-sizing:border-box;
-	font-family: brandon-grotesque, sans-serif;
 }
 a{
 	text-decoration:none;
@@ -14,15 +13,16 @@ a{
 html, body, #wrapper {height:100%; font-family:sans-serif;}
 
 body{
+	font-family: brandon-grotesque, sans-serif;
 	background: $beige;
-	font-size:100;
+	font-size:100%;
 }
 
-.wrapper{
+.wrapper{ 
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto  (-$padding-default);
+	margin: 0 auto  (-$padding-default); 
 }
 
 #head{
@@ -43,7 +43,7 @@ body{
 
 .cta{
 	-webkit-border-radius: 3px; 
-	-moz-border-radius: 3px; 
+	-moz-border-radius: 3px;  
 	border-radius: 3px; 
 	-webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 2px 2px rgba(50, 50, 50, 0.75);
@@ -64,17 +64,19 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792c41', endColorstr='#3d1f3b',GradientType=0 ); /* IE6-9 */
 
 	color:$beige;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 #main{
 	max-width: $max-width;
 	padding:$padding-default;
-	font-size:1.5em;
-	line-height:1.3333em;
 	> div{
 		float:left;
 		min-height:20px;
+	}
+	.copy{
+		font-size:1.5em;
+		line-height:1.3333em;
 	}
 	#headShot{
 		width:31.49%;
@@ -82,7 +84,7 @@ body{
 	}
 	#intro{
 		width:68.5%;
-		padding-left:$padding-default;
+		padding-left:2.08em;
 		p{
 			padding-bottom:2.08em;
 		}

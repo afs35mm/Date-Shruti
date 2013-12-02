@@ -1,0 +1,38 @@
+/*
+Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 40 of style
+
+35: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+36: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+37: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
+38: *\/
+39: body:before {
+40:   white-space: pre;
+41:   font-family: monospace;
+42:   content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of style\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - css/style\A 3: \A 4: Backtrace:\A 5: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:302:in `read'\A 6: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:302:in `update_stylesheet'\A 7: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'\A 8: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `each'\A 9: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'"; }
+
+Backtrace:
+style:40
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:471:in `block in tabulate'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:429:in `each'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:429:in `each_with_index'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:429:in `tabulate'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:392:in `_to_tree'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/engine.rb:265:in `render'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:309:in `update_stylesheet'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `each'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:262:in `block in watch'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 40 of style\A \A 35: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'\A 36: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'\A 37: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \"Syntax error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of style\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - css/style\A 3: \A 4: Backtrace:\A 5: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:302:in `read'\A 6: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:302:in `update_stylesheet'\A 7: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'\A 8: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `each'\A 9: /Users/andrew.schorr/.rvm/gems/ruby-1.9.3-p429@rails3tutorial2ndEd/gems/sass-3.3.0.alpha.198/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'\"; }"; }
