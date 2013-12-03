@@ -21,16 +21,16 @@
                     </div>
                     <div id="right" class="copy">
                         <h3 class="lrg">
-                            {{title}}    
+                            {{{title}}}    
                         </h3>
                         <div>
                              <ul class="questionTable">
                                 {{#each choices}}
-                                    <a class="btn afs" href="#">
-                                        {{@index}}
+                                    <a class="btn" data-value="{{this.pts}}" href="#">
+                                        {{alphaNum @index}}
                                     </a>
                                     <li>
-                                        {{this}}
+                                       {{{this.txt}}}
                                     </li>
                                 {{/each}}
                             </ul>
