@@ -1,13 +1,33 @@
-        <footer id="footer">
-            
+        <footer id="footer" class="cf">
+           <ul>
+               <li>
+                   <a href="/">
+                        Home   
+                   </a>
+               </li>
+                <li>
+                   <a href="/">
+                       About.php
+                   </a>
+               </li>
+                <li>
+                   <a href="http://www.twitter.com/yayshruti" target="_blank">
+                        @yayshruti
+                   </a>
+               </li>
+           </ul>
+           <h2>
+               Brought to you by friends of Shruti &copy; 2013.
+           </h5>
         </footer>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/handlebars.js"></script>
-        <script src="js/main.js"></script>
-
-
+         <?php 
+            if ( isset($page) && $page == 'quiz' ){
+                include_once('quiz_scripts.php');
+            }
+        ?>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

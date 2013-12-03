@@ -1,4 +1,8 @@
-<?php  include_once('header.php'); ?>
+<?php  
+    include_once('header.php'); 
+    $page = 'quiz';
+?>
+
 
 <div class="wrapper">
         <!--[if lt IE 7]>

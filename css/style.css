@@ -748,8 +748,8 @@ table {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none;
-  color: #2f1c3a; }
+  text-decoration: underline;
+  color: #000; }
 
 html, body {
   height: 100%; }
@@ -786,6 +786,7 @@ body {
   -webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
+  text-decoration: none;
   line-height: 2em;
   font-size: 1.25em;
   font-style: italic;
@@ -825,8 +826,13 @@ body {
   #main #intro {
     width: 68.5%;
     padding-left: 2.08em; }
-    #main #intro p {
-      padding-bottom: 2.08em; }
+  #main .heading {
+    font-weight: 800;
+    font-size: 1.255em;
+    text-transform: uppercase;
+    padding-bottom: 1.2em; }
+  #main p {
+    padding-bottom: 1.5em; }
   #main span.lrg {
     text-transform: uppercase;
     font-size: 1.5em;
@@ -847,6 +853,7 @@ body {
     line-height: 1.6em;
     display: inline-block;
     padding-left: .1em;
+    text-decoration: none;
     -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
     box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
@@ -868,7 +875,21 @@ body {
     z-index: 10;
     position: absolute; }
   #main .btn:active {
-    background: red; }
+    -webkit-box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.75);
+    background: -moz-linear-gradient(top, #f2d4c1 0%, #fffdfc 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2d4c1), color-stop(100%, #fffdfc));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2d4c1 0%, #fffdfc 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2d4c1 0%, #fffdfc 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f2d4c1 0%, #fffdfc 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f2d4c1 0%, #fffdfc 100%);
+    /* W3C */ }
   #main ul.questionTable {
     padding-bottom: 3em; }
     #main ul.questionTable li {
@@ -885,11 +906,35 @@ body {
   #main #questions #right {
     width: 70%;
     float: left; }
+    #main #questions #right span {
+      font-style: italic; }
+
+.about span {
+  font-weight: 600;
+  font-style: italic; }
 
 #footer {
   background: #2f1c3a;
   color: #ffe7d8;
   height: 3.125em; }
+  #footer ul {
+    padding-left: 3.125em; }
+    #footer ul li {
+      float: left;
+      display: block; }
+      #footer ul li a {
+        line-height: 3.125em;
+        text-decoration: none;
+        color: #ffe7d8;
+        font-weight: 600;
+        padding: 0 2.5em 0 0;
+        text-transform: lowercase; }
+      #footer ul li a:hover {
+        text-decoration: underline; }
+  #footer h2 {
+    float: right;
+    line-height: 3.125em;
+    padding-right: 3.125em; }
 
 @media (max-width: 721px) {
   #main {

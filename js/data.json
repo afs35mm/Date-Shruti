@@ -24,7 +24,7 @@
       ]
     }, 
     {
-      "title": "Tell me how you <span style='font-style:italic'>really</span> feel about the ocean?", 
+      "title": "Tell me how you <span>really</span> feel about the ocean?", 
       "numberImg" : "no2",
       "choices": [
         {
@@ -278,7 +278,7 @@
           "pts": 2
         },
         {
-          "txt": "Rom coms, as in <span style='font-style:italic;'>me</span> watching them with <span style='font-style:italic;'>you</span>. I have dignity. ",
+          "txt": "Rom coms, as in <span>me</span> watching them with <spanyou</span>. I have dignity. ",
           "pts": 4
         }
       ]
