@@ -26,7 +26,7 @@
                         <div>
                              <ul class="questionTable">
                                 {{#each choices}}
-                                    <a class="btn" href="javascript: void(0)">
+                                    <a class="btn afs" href="#">
                                         {{@index}}
                                     </a>
                                     <li>

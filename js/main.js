@@ -4,27 +4,38 @@ var DS = DS || {};
 DS.App = (function(){
 
 	var config = {
-		currentQuestion: 0
+		currentQuestion: 	0,
+		source: 			$("#questions-template").html()
 	};
 
 
-	var bindDomEvents = function(){
+	var injectTemplate = function(callback){
 		
-	};
-
-	var injectTemplate = function(){
-		
-		var source   = $("#questions-template").html();
-		var template = Handlebars.compile(source);
+		var template = Handlebars.compile(config.source);
 
 		$.getJSON( "js/data.json", function( data ) {
 			var compiledCurrentQuestion = data.questions[config.currentQuestion];
-			$('#questions').html(template(compiledCurrentQuestion));
+			
+			if(compiledCurrentQuestion != undefined){
+				$('#questions').html(template(compiledCurrentQuestion));	
+			}else{
+				alert('no more questions :(');
+			}
+		}).done(function(){
+			callback();
+		});
+	};
+
+	var bindDomEvents = function(){
+		$('.btn').on('click', function(e){
+			config.currentQuestion++;
+			injectTemplate(bindDomEvents);
+			e.preventDefault();
 		});
 	};
 
 	var init = function(){
-		injectTemplate();
+		injectTemplate(bindDomEvents);
 	};
 
 	return {

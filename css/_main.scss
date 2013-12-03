@@ -130,15 +130,21 @@ body{
 		background: linear-gradient(to bottom,  #fffdfc 0%,#f2d4c1 100%); /* W3C */
 		
 		color:#892c41;
-
+		z-index:10;
 		position:absolute;
-
 	}
+	
+	.btn:active{
+			background:red;
+		}
+
 	ul.questionTable{
 		li{
 			min-height:$btn-dimensions;
 			margin: 0 0 .5em ($btn-dimensions) + .5em;
 			padding-top:.2em;
+			position:relative;
+			z-index:9;
 		}
 	}
 	#questions{

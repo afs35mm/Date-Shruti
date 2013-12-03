@@ -860,11 +860,16 @@ body {
     background: linear-gradient(to bottom, #fffdfc 0%, #f2d4c1 100%);
     /* W3C */
     color: #892c41;
+    z-index: 10;
     position: absolute; }
+  #main .btn:active {
+    background: red; }
   #main ul.questionTable li {
     min-height: 1.6em;
     margin: 0 0 0.5em 2.1em;
-    padding-top: .2em; }
+    padding-top: .2em;
+    position: relative;
+    z-index: 9; }
   #main #questions #left {
     width: 30%;
     float: left; }
