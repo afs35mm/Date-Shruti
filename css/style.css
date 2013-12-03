@@ -749,9 +749,11 @@ a {
   text-decoration: none;
   color: #2f1c3a; }
 
-html, body, #wrapper {
-  height: 100%;
-  font-family: sans-serif; }
+html, body {
+  height: 100%; }
+
+#wrapper {
+  min-height: 100%; }
 
 body {
   font-family: brandon-grotesque, sans-serif;
@@ -761,7 +763,6 @@ body {
 .wrapper {
   min-height: 100%;
   height: auto !important;
-  height: 100%;
   margin: 0 auto -3.125em; }
 
 #head {
@@ -786,7 +787,7 @@ body {
   line-height: 2em;
   font-size: 1.25em;
   font-style: italic;
-  padding: .3em 1.6em;
+  padding: .08em 1.6em;
   background: #792c41;
   /* Old browsers */
   background: -moz-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
@@ -824,9 +825,51 @@ body {
     padding-left: 2.08em; }
     #main #intro p {
       padding-bottom: 2.08em; }
+  #main span.lrg {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: inline; }
+  #main h3.lrg {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding: 1em 0; }
+  #main .btn {
+    font-weight: 800;
+    font-size: 1em;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    display: inline-block;
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+    background: #fffdfc;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fffdfc 0%, #f2d4c1 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffdfc), color-stop(100%, #f2d4c1));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fffdfc 0%, #f2d4c1 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fffdfc 0%, #f2d4c1 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fffdfc 0%, #f2d4c1 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fffdfc 0%, #f2d4c1 100%);
+    /* W3C */
+    color: #892c41;
+    position: absolute; }
+  #main ul.questionTable li {
+    min-height: 1.6em;
+    margin: 0 0 0.5em 2.1em;
+    padding-top: .2em; }
   #main #questions #left {
     width: 30%;
     float: left; }
+    #main #questions #left img {
+      max-width: 100%; }
   #main #questions #right {
     width: 70%;
     float: left; }
@@ -834,5 +877,8 @@ body {
 #footer {
   background: #2f1c3a;
   color: #ffe7d8;
-  height: 3.125em;
-  /* .push must be the same height as .footer */ }
+  height: 3.125em; }
+
+@media (max-width: 721px) {
+  #main {
+    font-size: .85em; } }
