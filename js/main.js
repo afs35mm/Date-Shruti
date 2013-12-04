@@ -6,7 +6,20 @@ DS.App = (function(){
 	var config = {
 		currentQuestion: 	0,
 		source: 			$("#questions-template").html(),
+		contactTemplate: 	$("#contact-template").html(),
 		score: 				0,
+		worstDate: {
+			'title' : 'worst kinda date you can get!'
+		},
+		badDate: {
+			'title' : 'thils is the title for a bad date'
+		},
+		mediumDate: {
+			'title' : 'SCHMEDIUM'
+		},
+		bestDate: {
+			'title' : 'youre the tits'
+		}
 	};
 
 	var template = Handlebars.compile(config.source);
@@ -48,7 +61,7 @@ DS.App = (function(){
 			if(compiledCurrentQuestion != undefined){
 				$('#questions').html(template(compiledCurrentQuestion));	
 			}else{
-				alert('no more questions :(');
+				appendContactForm();
 			}
 		}).done(function(){
 			callback();
@@ -70,8 +83,55 @@ DS.App = (function(){
 		});
 	};
 
+	var bindContactFormEvents = function(){
+		$('#myfile').change(function(){
+			$('#path').val($(this).val());
+			var filePath = $('#path').val().replace("C:\\fakepath\\", "");
+			$('#path').val(filePath);
+		});
+
+		$('input:radio[name="pic"]').change(
+	    function(){
+	        if ($(this).is(':checked') && $(this).val() != 'yes' ) {
+	            $('.uploadField').prop('disabled', true);
+	            $('.add-photo-btn').toggleClass('disable');
+	        }else{
+	        	$('.uploadField').prop('disabled', false);
+	        	$('.add-photo-btn').toggleClass('disable');
+	        }
+	    });
+	};
+
+	var appendContactForm = function(){
+		
+		var	dateType = null;
+		
+		$.get('contact.html.tmpl',function(data){
+			var contactTemplate = Handlebars.compile(data);
+			if(config.score >= 60){
+				dateType = 'bestDate';
+			}else if( config.score < 60 && config.score >= 46 ){
+				dateType = 'goodDate';
+			}else if( config.score < 46 && config.score >= 35 ){
+				dateType = 'badDate';
+			}else if( config.score < 35 && config.score >= 17 ){
+				dateType = 'worstDate';
+			}else{
+				dateType = 'unknown';
+			}
+			//console.log(config[dateType]);
+			$('#main').html(contactTemplate(config[dateType]));
+		}).done(function(){
+			$('.send').on('click', function(){
+				alert('submitted!');
+			});
+			bindContactFormEvents();
+		});
+	};
+
 	var init = function(){
 		injectTemplate(bindDomEvents);
+		//appendContactForm();
 	};
 
 	return {

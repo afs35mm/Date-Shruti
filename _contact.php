@@ -11,7 +11,7 @@
 	<div class="center">
 	   <div id="main" class="copy contact cf">
 	   		<div class="copy">
-		   		<h1 class="heading">About</h1>
+		   		<h1 class="heading">you’re totally the best test takin' man!</h1>
 				<div id="contact-area">
 					<form method="post" action="contactengine.php">
 						<label for="Name">Name</label>
