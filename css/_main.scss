@@ -12,7 +12,6 @@ a{
 	color:#000;
 }
 html, body{height:100%;}
-#wrapper {min-height:100%;}
  
 body{
 	font-family: brandon-grotesque, sans-serif;
@@ -20,7 +19,7 @@ body{
 	font-size:100%; 
 }
 
-.wrapper{ 
+#wrapper{  
 	min-height: 100%;
 	height: auto !important;
 	margin: 0 auto  (-$padding-default); 
@@ -43,18 +42,22 @@ body{
 }
 
 .cta{
+	font-family: brandon-grotesque, sans-serif;
+
 	-webkit-border-radius: 3px; 
 	-moz-border-radius: 3px;  
 	border-radius: 3px; 
 	-webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 2px 2px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 2px 2px rgba(50, 50, 50, 0.75);
+	overflow:hidden;
 
 	text-decoration:none;
-	line-height:2em;
+	line-height:1.7em;
+	height:1.6em;
 	font-size:1.25em;
 	font-style:italic;
-	padding:.08em 1.6em;
+	padding: 0 1.6em;
 
 	background: #792c41; /* Old browsers */
 	background: -moz-linear-gradient(top,  #792c41 0%, #3d1f3b 100%); /* FF3.6+ */
@@ -65,6 +68,8 @@ body{
 	background: linear-gradient(to bottom,  #792c41 0%,#3d1f3b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#792c41', endColorstr='#3d1f3b',GradientType=0 ); /* IE6-9 */
 
+	display: inline-block;
+	border:none;
 	color:$beige;
 	font-weight: 400;
 }
@@ -79,6 +84,7 @@ body{
 	.copy{
 		font-size:1.5em;
 		line-height:1.3333em;
+		padding-bottom:4em;
 	}
 	#headShot{
 		width:31.49%;
@@ -89,9 +95,16 @@ body{
 		padding-left:2.08em;
 	}
 	.heading{
-		font-weight:800;font-size:1.255em;
+		font-weight:800;
+		font-size:1.255em;
 		text-transform:uppercase;
-		padding-bottom:1.2em;
+		padding-bottom:.85em;
+
+		color:#9a354e;
+		background: -webkit-linear-gradient(#561824, #bf4869);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		
 	}
 	p{
 		padding-bottom:1.5em;
@@ -164,7 +177,6 @@ body{
 			z-index:9;
 
 		}
-		padding-bottom:3em;
 	}
 	#questions{
 		#left{
@@ -218,7 +230,13 @@ body{
 }
 
 @media (max-width: 721px) {
-    #main{
+    #main, #footer{
     	font-size:.85em;
     }
+    #wrapper{  
+		margin-bottom: (-$padding-default * .85); 
+	}
+	#footer ul li a {
+		padding-right:.5em
+	}
 }

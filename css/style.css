@@ -742,6 +742,74 @@ table {
 .cf {
   *zoom: 1; }
 
+#contact-area {
+  width: 100%; }
+
+#main label, #main input, #main textarea {
+  float: left;
+  display: block;
+  width: 100%; }
+#main label {
+  text-transform: uppercase;
+  font-weight: 500; }
+#main h4 {
+  text-transform: uppercase; }
+#main input[type=submit] {
+  width: auto;
+  float: right;
+  margin-top: 1.5em; }
+#main input[type=text] {
+  max-width: 650px; }
+#main input[type=text], #main textarea {
+  margin-bottom: .5em; }
+#main input[type=radio] {
+  margin: .3em .5em  0 0; }
+#main .photo, #main input[type=radio] {
+  width: auto;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400; }
+#main .upload {
+  margin: .3em 0 0 0;
+  padding: 0; }
+  #main .upload span {
+    display: none; }
+#main .upload input[type="file"] {
+  z-index: 999;
+  line-height: 0;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  left: 0; }
+#main input[type="text"]:disabled {
+  color: #bfbfbf; }
+#main #path {
+  max-width: 300px;
+  margin-right: 25px; }
+#main .add-photo-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  background-color: #83b81a;
+  color: #fff;
+  display: block;
+  font-size: .85em;
+  width: auto;
+  float: left;
+  text-transform: lowercase; }
+  #main .add-photo-btn.disable {
+    color: #bfbfbf !important;
+    opacity: .6; }
+#main input[type="label"] {
+  color: red; }
+#main input[type="text"] {
+  float: left; }
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -754,15 +822,12 @@ a {
 html, body {
   height: 100%; }
 
-#wrapper {
-  min-height: 100%; }
-
 body {
   font-family: brandon-grotesque, sans-serif;
   background: #ffe7d8;
   font-size: 100%; }
 
-.wrapper {
+#wrapper {
   min-height: 100%;
   height: auto !important;
   margin: 0 auto -3.125em; }
@@ -780,17 +845,20 @@ body {
   min-height: 100%; }
 
 .cta {
+  font-family: brandon-grotesque, sans-serif;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.75);
+  overflow: hidden;
   text-decoration: none;
-  line-height: 2em;
+  line-height: 1.7em;
+  height: 1.6em;
   font-size: 1.25em;
   font-style: italic;
-  padding: .08em 1.6em;
+  padding: 0 1.6em;
   background: #792c41;
   /* Old browsers */
   background: -moz-linear-gradient(top, #792c41 0%, #3d1f3b 100%);
@@ -807,6 +875,8 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#792c41', endColorstr='#3d1f3b',GradientType=0 );
   /* IE6-9 */
+  display: inline-block;
+  border: none;
   color: #ffe7d8;
   font-weight: 400; }
 
@@ -818,7 +888,8 @@ body {
     min-height: 20px; }
   #main .copy {
     font-size: 1.5em;
-    line-height: 1.3333em; }
+    line-height: 1.3333em;
+    padding-bottom: 4em; }
   #main #headShot {
     width: 31.49%; }
     #main #headShot img {
@@ -830,7 +901,11 @@ body {
     font-weight: 800;
     font-size: 1.255em;
     text-transform: uppercase;
-    padding-bottom: 1.2em; }
+    padding-bottom: .85em;
+    color: #9a354e;
+    background: -webkit-linear-gradient(#561824, #bf4869);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #main p {
     padding-bottom: 1.5em; }
   #main span.lrg {
@@ -890,14 +965,12 @@ body {
     /* IE10+ */
     background: linear-gradient(to bottom, #f2d4c1 0%, #fffdfc 100%);
     /* W3C */ }
-  #main ul.questionTable {
-    padding-bottom: 3em; }
-    #main ul.questionTable li {
-      min-height: 1.6em;
-      margin: 0 0 0.5em 2.1em;
-      padding-top: .2em;
-      position: relative;
-      z-index: 9; }
+  #main ul.questionTable li {
+    min-height: 1.6em;
+    margin: 0 0 0.5em 2.1em;
+    padding-top: .2em;
+    position: relative;
+    z-index: 9; }
   #main #questions #left {
     width: 30%;
     float: left; }
@@ -937,5 +1010,11 @@ body {
     padding-right: 3.125em; }
 
 @media (max-width: 721px) {
-  #main {
-    font-size: .85em; } }
+  #main, #footer {
+    font-size: .85em; }
+
+  #wrapper {
+    margin-bottom: -2.65625em; }
+
+  #footer ul li a {
+    padding-right: 0.5em; } }

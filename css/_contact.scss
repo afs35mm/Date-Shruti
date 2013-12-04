@@ -1,0 +1,96 @@
+
+#contact-area {
+	width: 100%;
+}
+$disabled-color: #bfbfbf;
+#main{	
+	label, input, textarea{
+		float:left;
+		display:block;
+		width:100%;
+		//margin-bottom:.3em;
+
+	}
+	label{
+		text-transform: uppercase;
+		font-weight:500;
+	}
+	h4{
+		text-transform:uppercase;
+		//margin-bottom:.5em;
+	}
+	input[type=submit]{
+		width:auto;
+		float:right;
+		margin-top: 1.5em;
+	}
+	input[type=text]{
+		max-width:650px;
+	}
+	input[type=text], textarea{
+		margin-bottom:.5em;
+	}
+	
+	 input[type=radio]{
+	 	margin: .3em .5em  0 0;
+	 }
+	.photo, input[type=radio]{
+		width:auto;
+		text-transform: none;
+		font-style:italic;
+		font-weight:400;
+	}
+	.upload{
+		margin: .3em 0 0 0;
+		padding:0;
+		span{
+			display:none;
+		}
+	}
+	.upload input[type="file"]{
+	    z-index: 999;
+	    line-height: 0;
+	    //font-size: 50px;
+	    position: absolute;
+	    opacity: 0;
+	    filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
+	    cursor: pointer;
+	    margin: 0;
+	    padding:0;
+	    left:0;
+	}
+	input[type="text"]:disabled{
+		color:$disabled-color;
+	}
+	#path{
+		max-width:300px; 
+		margin-right:25px;
+	}
+	.add-photo-btn{
+	    position:relative;
+	    overflow:hidden;
+	    cursor:pointer;
+	    text-align:center;
+	    background-color:#83b81a;
+	    color:#fff;
+	    display:block;
+	    font-size:.85em;
+	    width:auto;
+	    float:left;
+	    text-transform: lowercase;
+
+	    &.disable{
+			color:$disabled-color !important;
+			opacity:.6;
+	    }
+	}
+	input[type="label"]{
+		color:red;
+	}
+	input[type="text"]{
+		float:left;
+	}
+	#myfile{
+
+	}
+}
