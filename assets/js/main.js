@@ -149,6 +149,8 @@ DS.App = (function(){
 			}
 			//console.log(config[dateType]);
 			$('#main').html(contactTemplate(config[dateType]));
+			$('#title').val( $('h1.heading').html() );
+			$('#score').val(config.score);
 		}).done(function(){
 			$('.send').on('click', function(e){
 				validateForm();

@@ -2,9 +2,12 @@
     <h1 class="heading">{{title}}</h1>
     <div id="contact-area">
         <form method="post" action="/submitform">
+            
+            <input type="hidden" name="Title" id="title" value=""/>
+            <input type="hidden" name="Score" id="score" value=""/>
+
             <label for="Name">Name*</label>
             <input type="text" name="Name" id="Name" class="validate"/>
-            <?php echo 'test test!' ?>
             <label for="Email">Email*</label>
             <input type="text" name="Email" id="Email" class="validate" />
             

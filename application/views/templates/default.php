@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <!-- TODO add dynamic ttile-->
-        <title><?php echo $title; ?></title>
+        <title>Date Shruti <?php if( isset($title)){ echo '| ' . $title; }  ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,9 +26,9 @@
 			        <img src="/assets/img/header.jpg" alt="">
 			    </div>
 			</div>
-
+      
 			<div class="center">
-			   <div id="main" class="cf">
+         <div id="main" class="cf">
 			       
 			       	<?php echo $body; ?>
 			       

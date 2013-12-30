@@ -18,6 +18,8 @@ class Submitform extends CI_Controller {
 		$Name = Trim(stripslashes($_POST['Name'])); 
 		$Email = Trim(stripslashes($_POST['Email'])); 
 		$Message = Trim(stripslashes($_POST['Message'])); 
+		$Title = Trim(stripslashes($_POST['Title'])); 
+		$Score = Trim(stripslashes($_POST['Score'])); 
 
 		$message = "";
 		$message .= "Name: ";
@@ -28,6 +30,14 @@ class Submitform extends CI_Controller {
 		$message .= "\r\n";
 		$message .= "Message: ";
 		$message .= $Message;
+		$message .= "\r\n";
+
+		$message .= "Title: ";
+		$message .= $Title;
+		$message .= "\r\n";
+
+		$message .= "Score: ";
+		$message .= $Score;
 		$message .= "\r\n";
 
 		$this->load->library('email', $config);

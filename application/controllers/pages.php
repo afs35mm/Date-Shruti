@@ -10,14 +10,22 @@ class Pages extends CI_Controller {
 			// Whoops, we don't have a page for that!
 			show_404();
 		}
-		$data = array(
-		 
-		   'title' => 'Title goes here',
-		    
-		);
+		if( $page == 'home' ){
+			$title_tag = 'Home';
+		}elseif( $page == 'about' ){
+			$title_tag = 'About';
+		}elseif( $page == 'quiz'){
+			$title_tag = 'Quiz';
+		}else{
+			$title_tag = '';
+		}
 
-		$this->load->helper('url');
+		$data = array(
+		   'title' => $title_tag,
+		);
+		//$this->load->helper('url');
 		$this->load->library('template');
 		$this->template->load('default', 'pages/'.$page, $data);	
+
 	}
 }
