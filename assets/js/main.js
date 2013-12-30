@@ -122,12 +122,9 @@ DS.App = (function(){
 			}
 			//if last loop, execute callback
 			if( i == n){
-				if( config.canSubmit ){
-					alert('all true');
-				}else{
-					alert('not validating');
+				if( !config.canSubmit ){
+					return
 				}
-				config.canSubmit = true;
 			}
 		});
 
@@ -155,8 +152,10 @@ DS.App = (function(){
 		}).done(function(){
 			$('.send').on('click', function(e){
 				validateForm();
-				//alert('submitted!');
-				e.preventDefault();
+				if(!config.canSubmit){
+					e.preventDefault();
+				}
+				config.canSubmit = true;
 			});
 			bindContactFormEvents();
 		});

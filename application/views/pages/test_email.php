@@ -1,11 +1,7 @@
 <div class="copy">
     <h1 class="heading">Test title</h1>
     <div id="contact-area">
-        
-            <?php echo validation_errors(); ?>
-            <?php echo form_open('form'); ?>
-
-		
+        <form method="post" action="index.php/form">
             <label for="Name">Name</label>
             <input type="text" name="Name" id="Name" />
 
