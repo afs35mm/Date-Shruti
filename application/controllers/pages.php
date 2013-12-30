@@ -16,9 +16,29 @@ class Pages extends CI_Controller {
 		    
 		);
 
+		if( $page == 'submit' || $page == 'quiz' ) {
+			$this->load->helper(array('form', 'url'));
+			$this->load->library('form_validation');
+
+			
+
+			// if ($this->form_validation->run() == FALSE)
+			// {
+			// 	$this->load->library('template');
+			// 	$this->template->load('default', 'pages/submit', $data);
+			// }
+			// else
+			// {
+			// 	$this->load->library('template');
+			// 	$this->template->load('default', 'pages/formsuccess', $data);
+			// }
+
+		}
+	
 		$this->load->helper('url');
 		$this->load->library('template');
-		$this->template->load('default', 'pages/'.$page, $data);
-
+		$this->template->load('default', 'pages/'.$page, $data);	
+		
+		
 	}
 }
