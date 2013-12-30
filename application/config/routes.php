@@ -41,6 +41,10 @@
 
 $route['(:any)'] = 'pages/view/$1';
 $route['submitform'] = "submitform";
+
+$route['upload'] = "upload";
+$route['upload/do_upload'] = "upload/do_upload";
+
 $route['default_controller'] = 'pages/view';
 
 
