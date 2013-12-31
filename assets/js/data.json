@@ -127,7 +127,7 @@
     },
      {
       "title": "Do you have hobbies that involve the following?", 
-      "numberImg" : "no6",
+      "numberImg" : "no7",
       "choices": [
         {
           "txt": "balls",
@@ -153,7 +153,7 @@
     },
      {
       "title": "What did Shruti wear on Halloween that one time?", 
-      "numberImg" : "no7",
+      "numberImg" : "no8",
       "choices": [
         {
           "txt": "A construction paper feather headband. (Indian! Get it?)",
@@ -175,7 +175,7 @@
     },
     {
       "title": "Which gif sums up how you feel about your job:", 
-      "numberImg" : "no7",
+      "numberImg" : "no9",
       "choices": [
         {
           "txt": "<img src='http://s3.amazonaws.com/date-shruti/daria1.gif'>",
@@ -197,7 +197,7 @@
     },
     {
       "title": "Who is your actorganger? ", 
-      "numberImg" : "no8",
+      "numberImg" : "no10",
       "choices": [
         {
           "txt": "Benedict Cumberbatch: I might have quirky looks, but I can rock a suit and melt your heart and panties in a witty t&#234;te-&#224;-t&#234;te. ",
@@ -219,7 +219,7 @@
     },
     {
       "title": "Vacation time! Where you going?", 
-      "numberImg" : "no9",
+      "numberImg" : "no11",
       "choices": [
         {
           "txt": "A beach with real waves; but somewhere with hiking, not a touristy luxury place. ",
@@ -241,7 +241,7 @@
     },
     {
       "title": "Which was NOT Shruti’s nickname?", 
-      "numberImg" : "no10",
+      "numberImg" : "no12",
       "choices": [
         {
           "txt": "Shrutster",
@@ -263,7 +263,7 @@
     },
     {
       "title": "THAT'S A DEALBREAKER, LADIES!", 
-      "numberImg" : "no10",
+      "numberImg" : "no13",
       "choices": [
         {
           "txt": "Hairy legs. Sorry, I’m just not that enlightened.",
@@ -285,7 +285,7 @@
     },
     {
       "title": "Babies?", 
-      "numberImg" : "no11",
+      "numberImg" : "no14",
       "choices": [
         {
           "txt": "Can I return them if they’re jerks? Just kidding. Sort of.",
@@ -307,7 +307,7 @@
     },
     {
       "title": "Your thoughts on marriage, 80s hair metal edition:", 
-      "numberImg" : "no12",
+      "numberImg" : "no15",
       "choices": [
         {
           "txt": "&ldquo;Once bitten, Twice Shy&rdquo;",
@@ -329,7 +329,7 @@
     },
     {
       "title": "How do you feel about quiet time?", 
-      "numberImg" : "no13",
+      "numberImg" : "no16",
       "choices": [
         {
           "txt": "I need regularly occurring time to reflect and digest.",
@@ -351,7 +351,7 @@
     },
     {
       "title": "What is Shruti’s favorite book? ", 
-      "numberImg" : "no14",
+      "numberImg" : "no17",
       "choices": [
         {
           "txt": "The Berenstain Bears and the Messy Room ",

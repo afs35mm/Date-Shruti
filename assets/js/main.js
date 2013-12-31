@@ -164,8 +164,8 @@ DS.App = (function(){
 	};
 
 	var init = function(){
-		injectTemplate(bindDomEvents);
-		//appendContactForm();
+		//injectTemplate(bindDomEvents);
+		appendContactForm();
 	};
 
 	return {

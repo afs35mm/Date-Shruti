@@ -43,7 +43,7 @@ $route['(:any)'] = 'pages/view/$1';
 $route['submitform'] = "submitform";
 
 $route['upload'] = "upload";
-$route['upload/do_upload'] = "upload/do_upload";
+$route['upload/upload_thing'] = "upload/upload_thing";
 
 $route['default_controller'] = 'pages/view';
 

@@ -2,6 +2,26 @@
 
 class Submitform extends CI_Controller {
 
+	function upload_thing()
+	{
+		$config['upload_path'] = './uploads/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '100';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+
+		$this->load->library('upload', $config);
+
+		if ( ! $this->upload->do_upload())
+		{
+			$error = array('error' => $this->upload->display_errors());
+
+			$this->load->view('upload_form', $error);
+
+			print_r('error!');
+		}
+	}
+
 	function index()
 	{
 		
@@ -20,6 +40,7 @@ class Submitform extends CI_Controller {
 		$Message = Trim(stripslashes($_POST['Message'])); 
 		$Title = Trim(stripslashes($_POST['Title'])); 
 		$Score = Trim(stripslashes($_POST['Score'])); 
+		$Pic = Trim(stripslashes($_POST['pic'])); 
 
 		$message = "";
 		$message .= "Name: ";
@@ -31,10 +52,9 @@ class Submitform extends CI_Controller {
 		$message .= "Message: ";
 		$message .= $Message;
 		$message .= "\r\n";
-
-		$message .= "Title: ";
+		$message .= "Title: "; 
 		$message .= $Title;
-		$message .= "\r\n";
+		$message .= "\r\n"; 
 
 		$message .= "Score: ";
 		$message .= $Score;
@@ -47,9 +67,15 @@ class Submitform extends CI_Controller {
 		$this->email->subject('Submission from DateShruti.com');
 		$this->email->message($message);
 		
+		if($Pic = 'yes'){
+			//try and upload image to server
+			$this->upload_thing();
+		}
+
 		if($this->email->send())
 		{
-
+			$this->load->library('template');
+			$this->template->load('default', 'pages/thanks');	
 		}
 		
 		else
@@ -57,9 +83,7 @@ class Submitform extends CI_Controller {
 			show_error($this->email->print_debugger());
 		}
 
-		
-		$this->load->library('template');
-		$this->template->load('default', 'pages/thanks');	
 	}
+
 }
 ?>

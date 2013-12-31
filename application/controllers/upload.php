@@ -2,18 +2,14 @@
 
 class Upload extends CI_Controller {
 
-	function __construct()
-	{
-		parent::__construct();
-		$this->load->helper(array('form', 'url'));
-	}
+	
 
 	function index()
 	{
 		$this->load->view('upload_form', array('error' => ' ' ));
 	}
 
-	function do_upload()
+	function upload_thing()
 	{
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
@@ -28,6 +24,8 @@ class Upload extends CI_Controller {
 			$error = array('error' => $this->upload->display_errors());
 
 			$this->load->view('upload_form', $error);
+
+			print_r('error!');
 		}
 		else
 		{
