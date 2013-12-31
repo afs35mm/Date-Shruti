@@ -67,13 +67,19 @@ class Submitform extends CI_Controller {
 		$this->email->subject('Submission from DateShruti.com');
 		$this->email->message($message);
 		
-		if($Pic = 'yes'){
-			//try and upload image to server
+		$upload_data = " "; 
+		$file_name = " ";
+		
+		if($Pic == 'yes' && $_FILES['userfile']['size'] > 0){
 			$this->upload_thing();
+			$upload_data = $this->upload->data(); 
+  			$file_name =   $upload_data['file_name'];
+  			$this->email->attach('./uploads/' . $file_name);
 		}
 
 		if($this->email->send())
 		{
+
 			$this->load->library('template');
 			$this->template->load('default', 'pages/thanks');	
 		}
@@ -82,7 +88,6 @@ class Submitform extends CI_Controller {
 		{
 			show_error($this->email->print_debugger());
 		}
-
 	}
 
 }
