@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://date-shruti.dev';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
