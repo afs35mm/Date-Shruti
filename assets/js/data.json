@@ -10,15 +10,15 @@
           "pts": 4 
         },
         {
-          "txt": "She’s been to 50&amp; of America's national parks",
+          "txt": "She’s been to 50 of America's national parks.",
           "pts": 2 
         },
         {
-          "txt": "She went to summer college-prep camp before the 8th and 10th grade",
+          "txt": "She went to summer college prep camp before the 8th and 10th grade.",
           "pts": 3 
         },
         {
-          "txt": "She has a cat named Peanut Brittle Medium",
+          "txt": "She has a cat named Peanut Brittle.",
           "pts": 1 
         }
       ]
@@ -28,7 +28,7 @@
       "numberImg" : "no2",
       "choices": [
         {
-          "txt": "Meh. I can take it or leave it",
+          "txt": "Meh. I can take it or leave it.",
           "pts": 2 
         },
         {
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "title": "Do ya pull on <a target='_blank' href='http://thoughtcatalog.com/nico-lang/2013/09/59-quick-slang-phrases-from-the-1920s-we-should-start-using-again/'>gasper<a/> when you drink your giggle water? (Yes means 'sometimes yes.'' Accept it.)", 
+      "title": "Do ya pull on <a target='_blank' href='http://thoughtcatalog.com/nico-lang/2013/09/59-quick-slang-phrases-from-the-1920s-we-should-start-using-again/'>gasper<a/> when you drink your giggle water? (Occasional smoking is still a “yes,” accept it. )", 
       "numberImg" : "no3",
       "choices": [
         {
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "title": "Do you like to kiss often or for long periods of time?", 
+      "title": "Do you like to kiss for long periods of time?", 
       "numberImg" : "no4",
       "choices": [
         {
@@ -98,7 +98,7 @@
           "pts": 1 
         },
         {
-          "txt": "Forest Ranger",
+          "txt": "Forest ranger",
           "pts": 2 
         }
       ]
@@ -108,7 +108,7 @@
       "numberImg" : "no6",
       "choices": [
         {
-          "txt": "A Food Network TV host that travels the globe eating gross stuff",
+          "txt": "A Food Network TV host that travels the globe eating gross stuff.",
           "pts": 1 
         },
         {
@@ -116,7 +116,7 @@
           "pts": 2 
         },
         {
-          "txt": "The founder of a non-culty southwestern artist commune",
+          "txt": "The founder of a non-culty southwestern artist commune.",
           "pts": 4 
         },
         {
@@ -130,23 +130,23 @@
       "numberImg" : "no7",
       "choices": [
         {
-          "txt": "balls",
+          "txt": "Balls",
           "pts": 1 
         },
         {
-          "txt": "tools",
+          "txt": "Tools",
           "pts": 3 
         },
         {
-          "txt": "utensils",
+          "txt": "Utensils",
           "pts": 4 
         },
         {
-          "txt": "hoarding",
+          "txt": "Hoarding",
           "pts": 5
         },
         {
-          "txt" : "no, I do not",
+          "txt" : "No, I do not.",
           "pts" : 2
         }
       ]
@@ -156,7 +156,7 @@
       "numberImg" : "no8",
       "choices": [
         {
-          "txt": "A construction paper feather headband. (Indian! Get it?)",
+          "txt": "A construction paper feather headband (Indian! Get it?)",
           "pts": 1 
         },
         {
@@ -164,7 +164,7 @@
           "pts": 4 
         },
         {
-          "txt": "utensils",
+          "txt": "Utensils",
           "pts": 2
         },
         {
@@ -204,11 +204,11 @@
           "pts": 1 
         },
         {
-          "txt": "Ryan Gosling: I'm the boy-next-door with a ukulele wholl build you a house and kiss you in the rain. Hey, girl. ",
+          "txt": "Ryan Gosling: I'm the boy-next-door with a ukulele who'll build you a house and kiss you in the rain. Hey, girl. ",
           "pts": 2 
         },
         {
-          "txt": "Jason Sudeikis: I tend to fly in under the radar, but my hilarity and humility give me multi date staying power.",
+          "txt": "Jason Sudeikis: I tend to fly in under the radar, but my hilarity and humility give me multi-date staying power.",
           "pts": 3
         },
         {
@@ -278,7 +278,7 @@
           "pts": 2
         },
         {
-          "txt": "Rom coms, as in <span>me</span> watching them with <spanyou</span>. I have dignity. ",
+          "txt": "Rom coms, as in <span>me</span> watching them with <span>you</span>. I have dignity. ",
           "pts": 4
         }
       ]
@@ -340,7 +340,7 @@
           "pts": 2 
         },
         {
-          "txt": "I always have something going, music, TV, radio. When it’s too quiet I get antsy.",
+          "txt": "I always have something going; music, TV, radio. When it’s too quiet I get antsy.",
           "pts": 2
         },
         {

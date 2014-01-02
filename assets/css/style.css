@@ -888,7 +888,8 @@ body {
   padding: 3.125em; }
   #main > div {
     float: left;
-    min-height: 20px; }
+    min-height: 20px;
+    width: 100%; }
   #main .copy {
     font-size: 1.5em;
     line-height: 1.3333em;
@@ -918,7 +919,8 @@ body {
   #main h3.lrg {
     text-transform: uppercase;
     font-size: 1.3em;
-    padding: 1em 0; }
+    padding: 1em 0;
+    width: 100%; }
     #main h3.lrg a {
       text-decoration: underline; }
   #main .btn {

@@ -29,7 +29,7 @@ DS.App = (function(){
 
 		$.getJSON( "/assets/js/data.json", function( data ) {
 			var compiledCurrentQuestion = data.questions[config.currentQuestion];
-			
+			console.log(compiledCurrentQuestion);
 			Handlebars.registerHelper('alphaNum', function(index) {
 				switch(index){
 					case 0:
@@ -60,7 +60,7 @@ DS.App = (function(){
 			});
 
 			if(compiledCurrentQuestion != undefined){
-				$('#questions').html(template(compiledCurrentQuestion));	
+				$('#questions').html(template(compiledCurrentQuestion)).hide().fadeIn();	
 			}else{
 				appendContactForm();
 				//window.location = '/submit';
