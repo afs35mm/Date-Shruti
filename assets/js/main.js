@@ -9,6 +9,7 @@ DS.App = (function(){
 		contactTemplate: 	$("#contact-template").html(),
 		score: 				0,
 		canSubmit: 			true,
+		windowTop: 			0,
 		worstDate: {
 			'title' : 'worst kinda date you can get!'
 		},
@@ -29,7 +30,7 @@ DS.App = (function(){
 
 		$.getJSON( "/assets/js/data.json", function( data ) {
 			var compiledCurrentQuestion = data.questions[config.currentQuestion];
-			console.log(compiledCurrentQuestion);
+			//console.log(compiledCurrentQuestion);
 			Handlebars.registerHelper('alphaNum', function(index) {
 				switch(index){
 					case 0:
@@ -61,9 +62,9 @@ DS.App = (function(){
 
 			if(compiledCurrentQuestion != undefined){
 				$('#questions').html(template(compiledCurrentQuestion)).hide().fadeIn();	
+				$(document).scrollTop(config.windowTop);
 			}else{
 				appendContactForm();
-				//window.location = '/submit';
 			}
 		}).done(function(){
 			callback();
@@ -76,12 +77,14 @@ DS.App = (function(){
 
 	var bindDomEvents = function(){
 		$('.btn').on('click', function(e){
+			config.windowTop = $(document).scrollTop();
+
 			$this = $(this);
 			config.currentQuestion++;
 			addHeight($this.data('value'));
 			injectTemplate(bindDomEvents);
 			e.preventDefault();
-			console.log(config.score);
+			//console.log(config.score);
 		});
 	};
 
@@ -107,7 +110,7 @@ DS.App = (function(){
 	var validateForm = function(){
 		
 		var n = $( '.validate' ).length;
-		console.log(n);
+		//console.log(n);
 		var i = 0;
 
 		$('.validate').each(function(index){
