@@ -93,8 +93,26 @@ body{
 		img{max-width:100%;}
 	}
 	#intro{
-		width:68.5%;
-		padding-left:2.08em;
+		$left-width: 31.49%;
+		$right-width: 68.5%;
+		$padding-left: 2.08em;
+		.homeImg{
+			width: $left-width;
+			float:left;
+		}
+		p{
+			width: $right-width;
+			float:right;
+			padding-left:$padding-left;
+		}
+		#wrap{
+			float:left;
+			padding-left: $left-width;
+			margin-left: $padding-left;
+			a{
+				float:left;
+			}	
+		}
 	}
 	.heading{
 		font-weight:800;
@@ -241,5 +259,44 @@ body{
 	}
 	#footer ul li a {
 		padding-right:.5em
+	}
+
+}
+@media (max-width: 460px) {
+	#main {
+		#intro{
+			p{
+				width: auto;
+				float:none;
+				padding-left:0;
+			}
+			.homeImg{
+				margin: 0 1em 1em 0;
+			}
+			#wrap{
+				width:100%;
+				margin: 0;
+				padding:0;
+				a{
+					width:100%;
+					text-align: center;
+				}
+			}
+		}
+		#questions{
+			#left{
+				width:50%;
+			}
+			#right{
+				width:100%;
+			}
+		}
+	}
+	
+	#footer ul li a {
+		padding-right:1.2em
+	}
+	h2{
+		display:none;
 	}
 }

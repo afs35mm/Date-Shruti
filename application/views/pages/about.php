@@ -1,4 +1,4 @@
-<div class="copy">
+<div class="copy about">
 	<h1 class="heading">About</h1>
    	<p>Date Shruti is brought to you by the makers of <a href="http://www.datejamie.com" target="_blank">Date Jamie</a>. We really loved making Date Jamie, so we decided to do it again. Mostly because we love Shruti, but also because making cool digital experiences is what we love to do. Yes, even in our free time. #InternetNerdAlert</p>
 
