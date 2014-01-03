@@ -1,6 +1,3 @@
-<!-- <div id="headShot">
-   <img src="/assets/img/headshot.jpg" alt="">
-</div> -->
 <div id="intro" class="copy">
     <img src="/assets/img/headshot.jpg" class="homeImg" alt="">
     <p><span class="lrg">this is shruti.</span> She is the best. Born in PA and currently living in Brooklyn, Shruti is a writer, traveller, and all around top notch human being. (We don't have to tell you how pretty she is, see for yourself)</p>
