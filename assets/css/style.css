@@ -996,6 +996,8 @@ body {
     float: left; }
     #main #questions #right span {
       font-style: italic; }
+  #main p.thanks {
+    font-size: 1.5em; }
 
 .about span {
   font-weight: 600;
