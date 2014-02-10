@@ -11,39 +11,57 @@ DS.App = (function(){
 		canSubmit: 			true,
 		windowTop: 			0,
 		worstDate: {
-			'title' : 'worst kinda date you can get!'
+			'title' : 'Sorry, you scored so bad you don’t even get a date!'
 		},
 		badDate: {
-			'title' : 'thils is the title for a bad date'
+			'opts'	: [
+				'Not bad. Not great, but not bad. You win Drink at Crown’s Inn. ',
+				'You scored an Irish “grand,” which really means “just okay.” Good enough to win a drink at Tooker Alley.',
+				'You’re a medium good test taker. You win a walk in Prospect Park, weather permitting. ',
+				'You scored somewhere between “meh” and “aiight.” You win a walk across the Brooklyn Bridge. '
+			],
+			'title' : 'thils is the default title for a bad date'
 		},
 		goodDate: {
+			'opts'	: [
+				'Your score was solid. Better than most. You win a date to the Met. ',
+				'Fine job, sir! Fine job, I say!  You win a date to go gallery hopping in Chelsea. ',
+				'Way to go! You win a date! How about dinner at Bar Corvo? ',
+				'Celebrate good scores! Come on! With drinks at Weatherup (the Brooklyn one) '
+			],
 			'title' : 'SCHMEDIUM'
 		},
 		bestDate: {
+			'opts'	: [
+				'You’re quite the test taker, fine sir. You and Shruti will be seeing a show at Bowery Ballroom.',
+				'That’s one of the best scores we’ve seen! You win a date to ride the Staten Island ferry until you both finish a bottle of red. ',
+				'Whoa, you just tore that test apart. Rawr, tiger. You win a date to the Bronx Zoo. ',
+				'Huzzah! You’re pretty much the best at this test. You win a date to Storm King. '
+			],
 			'title' : 'youre the tits'
 		},
 
-		worst: [
+		// worst: [
 
-		],
-		bad: [
-			'Not bad. Not great, but not bad. You win Drink at Crown’s Inn. ',
-			'You scored an Irish “grand,” which really means “just okay.” Good enough to win a drink at Tooker Alley.',
-			'You’re a medium good test taker. You win a walk in Prospect Park, weather permitting. ',
-			'You scored somewhere between “meh” and “aiight.” You win a walk across the Brooklyn Bridge. '
-		],
-		good: [
-			'Your score was solid. Better than most. You win a date to the Met. ',
-			'Fine job, sir! Fine job, I say!  You win a date to go gallery hopping in Chelsea. ',
-			'Way to go! You win a date! How about dinner at Bar Corvo? ',
-			'Celebrate good scores! Come on! With drinks at Weatherup (the Brooklyn one) '
-		],
-		best: [
-			'You’re quite the test taker, fine sir. You and Shruti will be seeing a show at Bowery Ballroom.',
-			'That’s one of the best scores we’ve seen! You win a date to ride the Staten Island ferry until you both finish a bottle of red. ',
-			'Whoa, you just tore that test apart. Rawr, tiger. You win a date to the Bronx Zoo. ',
-			'Huzzah! You’re pretty much the best at this test. You win a date to Storm King. '
-		],
+		// ],
+		// bad: [
+		// 	'Not bad. Not great, but not bad. You win Drink at Crown’s Inn. ',
+		// 	'You scored an Irish “grand,” which really means “just okay.” Good enough to win a drink at Tooker Alley.',
+		// 	'You’re a medium good test taker. You win a walk in Prospect Park, weather permitting. ',
+		// 	'You scored somewhere between “meh” and “aiight.” You win a walk across the Brooklyn Bridge. '
+		// ],
+		// good: [
+		// 	'Your score was solid. Better than most. You win a date to the Met. ',
+		// 	'Fine job, sir! Fine job, I say!  You win a date to go gallery hopping in Chelsea. ',
+		// 	'Way to go! You win a date! How about dinner at Bar Corvo? ',
+		// 	'Celebrate good scores! Come on! With drinks at Weatherup (the Brooklyn one) '
+		// ],
+		// best: [
+		// 	'You’re quite the test taker, fine sir. You and Shruti will be seeing a show at Bowery Ballroom.',
+		// 	'That’s one of the best scores we’ve seen! You win a date to ride the Staten Island ferry until you both finish a bottle of red. ',
+		// 	'Whoa, you just tore that test apart. Rawr, tiger. You win a date to the Bronx Zoo. ',
+		// 	'Huzzah! You’re pretty much the best at this test. You win a date to Storm King. '
+		// ],
 
 	};
 
@@ -177,7 +195,11 @@ DS.App = (function(){
 			}else{
 				dateType = 'unknown';
 			}
+			
 			console.log(config[dateType]);
+
+			config[dateType]['title'] = config[dateType]['opts'][randomNum];
+
 			$('#main').html(contactTemplate(config[dateType]));
 			$('#title').val( $('h1.heading').html() );
 			$('#score').val(config.score);
