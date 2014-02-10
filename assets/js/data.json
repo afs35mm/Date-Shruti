@@ -178,19 +178,19 @@
       "numberImg" : "no9",
       "choices": [
         {
-          "txt": "<img src='http://s3.amazonaws.com/date-shruti/daria1.gif'>",
+          "txt": "<img src='http://s3.amazonaws.com/date_shruti/daria1.gif'>",
           "pts": 4 
         },
         {
-          "txt": "<img src='http://s3.amazonaws.com/date-shruti/girl.gif'>",
+          "txt": "<img src='http://s3.amazonaws.com/date_shruti/girl.gif'>",
           "pts": 3 
         },
         {
-          "txt": "<img src='http://s3.amazonaws.com/date-shruti/shaq.gif'>",
+          "txt": "<img src='http://s3.amazonaws.com/date_shruti/shaq.gif'>",
           "pts": 2
         },
         {
-          "txt": "<img src='http://s3.amazonaws.com/date-shruti/boy.gif'>",
+          "txt": "<img src='http://s3.amazonaws.com/date_shruti/boy.gif'>",
           "pts": 1
         }
       ]
