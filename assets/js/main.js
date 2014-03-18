@@ -178,7 +178,7 @@ DS.App = (function(){
 		
 		var	dateType = null;
 		
-		var randomNum = Math.floor((Math.random()*4)+1);
+		var randomNum = Math.floor((Math.random()*3)+1);
 
 		console.log('final score = ' + config.score + ' , and random number is ' +  randomNum );
 

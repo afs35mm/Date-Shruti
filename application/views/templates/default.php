@@ -71,7 +71,6 @@
 
         ga('create', 'UA-20810868-14', 'dateshruti.com');
         ga('send', 'pageview');
-
-      </script>
+        </script>
     </body>
 </html>
