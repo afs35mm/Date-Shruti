@@ -191,7 +191,10 @@ DS.App = (function(){
 			}else if( config.score < 46 && config.score >= 35 ){
 				dateType = 'badDate';
 			}else if( config.score < 35 && config.score >= 17 ){
-				dateType = 'worstDate';
+				//Worst date, no contact form
+				//TODO: Take out of appendContactForm function...
+				$('#questions').html('<div class="cf copy noDateForYou"><p>dsklfhkshdf ksdfh skfh skfh skfh skfh sfkhs</p><div class="cumberland"><img src ="/assets/img/giphy.gif" /></div></div>');
+				return;
 			}else{
 				dateType = 'unknown';
 			}

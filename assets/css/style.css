@@ -964,6 +964,15 @@ body {
     color: #892c41;
     z-index: 10;
     position: absolute; }
+  #main .noDateForYou p {
+    float: left;
+    width: 40%; }
+  #main .noDateForYou .cumberland {
+    float: right;
+    width: 40%; }
+    #main .noDateForYou .cumberland img {
+      width: 100%;
+      margin-bottom: 3em; }
   #main .btn:active {
     -webkit-box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.75);
