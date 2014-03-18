@@ -7,14 +7,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <!-- TODO add dynamic ttile-->
+        <!--
+        
+        WEBSITE BY ANDREW SCHORR
+        AFS35MM.COM
+        -->
+
         <title>Date Shruti <?php if( isset($title)){ echo '| ' . $title; }  ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/assets/css/style.css">
         
-        <!--TODO include HTML shiv if IE whatever -->
         <script type="text/javascript" src="//use.typekit.net/jms6ovm.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>

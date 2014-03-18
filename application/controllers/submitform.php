@@ -72,7 +72,7 @@ class Submitform extends CI_Controller {
 		
 		if($Pic == 'yes' && $_FILES['userfile']['size'] > 0){
 			$this->upload_thing();
-			$upload_data = $this->upload->data(); 
+			$upload_data = $this->upload->data();  
   			$file_name =   $upload_data['file_name'];
   			$this->email->attach('./uploads/' . $file_name);
 		}
