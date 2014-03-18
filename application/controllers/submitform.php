@@ -4,11 +4,11 @@ class Submitform extends CI_Controller {
 
 	function upload_thing()
 	{
-		$config['upload_path'] = '../../uploads/';
+		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '100';
-		$config['max_width']  = '1024';
-		$config['max_height']  = '768';
+		$config['max_width']  = '2500'; 
+		$config['max_height']  = '2500';
 
 		$this->load->library('upload', $config);
 
