@@ -58,7 +58,7 @@
                </li>
            </ul>
            <h2>
-               Brought to you by friends of Shruti &copy; 2013.
+               Brought to you by friends of Shruti &copy; 2014.
            </h5>
         </footer>
         
