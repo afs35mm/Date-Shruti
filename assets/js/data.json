@@ -7,19 +7,19 @@
       "choices": [
         {
           "txt": "Shruti won a spelling bee with the word 'antediluvian'.",
-          "pts": 4 
+          "pts": 1 
         },
         {
           "txt": "She’s been to 50 of America's national parks.",
-          "pts": 2 
-        },
-        {
-          "txt": "She went to summer college prep camp before the 8th and 10th grade.",
           "pts": 3 
         },
         {
+          "txt": "She went to summer college prep camp before the 8th and 10th grade.",
+          "pts": 2 
+        },
+        {
           "txt": "She has a cat named Peanut Brittle.",
-          "pts": 1 
+          "pts": 4 
         }
       ]
     }, 
@@ -29,19 +29,19 @@
       "choices": [
         {
           "txt": "Meh. I can take it or leave it.",
-          "pts": 2 
-        },
-        {
-          "txt": "Lah-lah-love it!",
-          "pts": 1 
-        },
-        {
-          "txt": "I like to be around it, but not in it.",
           "pts": 3 
         },
         {
-          "txt": "The sand, the stink, the visible human skin? No thanks to that, ma’am.",
+          "txt": "Lah-lah-love it!",
           "pts": 4 
+        },
+        {
+          "txt": "I like to be around it, but not in it.",
+          "pts": 2 
+        },
+        {
+          "txt": "The sand, the stink, the visible human skin? No thanks to that, ma’am.",
+          "pts": 1 
         }
       ]
     },
@@ -51,11 +51,11 @@
       "choices": [
         {
           "txt": "Yes",
-          "pts": 4 
+          "pts": 1 
         },
         {
           "txt": "No",
-          "pts": 1 
+          "pts": 4 
         }
       ]
     },
@@ -65,19 +65,19 @@
       "choices": [
         {
           "txt": "No. But I make up for it.",
-          "pts": 2 
-        },
-        {
-          "txt": "Yes, but I’d like it to eventually lead to sex.",
-          "pts": 1 
-        },
-        {
-          "txt": "I could live on kisses alone!",
           "pts": 3 
         },
         {
-          "txt": "Are you talking on the mouth only?",
+          "txt": "Yes, but I’d like it to eventually lead to sex.",
           "pts": 4 
+        },
+        {
+          "txt": "I could live on kisses alone!",
+          "pts": 2 
+        },
+        {
+          "txt": "Are you talking on the mouth only?",
+          "pts": 1 
         }
       ]
     },
@@ -87,19 +87,19 @@
       "choices": [
         {
           "txt": "Jazzercise instructor",
-          "pts": 4 
-        },
-        {
-          "txt": "Doctor",
-          "pts": 3 
-        },
-        {
-          "txt": "Disneyland actress",
           "pts": 1 
         },
         {
-          "txt": "Forest ranger",
+          "txt": "Doctor",
           "pts": 2 
+        },
+        {
+          "txt": "Disneyland actress",
+          "pts": 4 
+        },
+        {
+          "txt": "Forest ranger",
+          "pts": 3 
         }
       ]
     },
@@ -109,19 +109,19 @@
       "choices": [
         {
           "txt": "A Food Network TV host that travels the globe eating gross stuff.",
-          "pts": 1 
-        },
-        {
-          "txt": "A broadway star! Jazz hands!",
-          "pts": 2 
-        },
-        {
-          "txt": "The founder of a non-culty southwestern artist commune.",
           "pts": 4 
         },
         {
+          "txt": "A broadway star! Jazz hands!",
+          "pts": 3 
+        },
+        {
+          "txt": "The founder of a non-culty southwestern artist commune.",
+          "pts": 1 
+        },
+        {
           "txt": "A princess. Duh. ",
-          "pts": 3
+          "pts": 2
         }
       ]
     },
@@ -131,7 +131,7 @@
       "choices": [
         {
           "txt": "Balls",
-          "pts": 1 
+          "pts": 5 
         },
         {
           "txt": "Tools",
@@ -139,15 +139,15 @@
         },
         {
           "txt": "Utensils",
-          "pts": 4 
+          "pts": 2 
         },
         {
           "txt": "Hoarding",
-          "pts": 5
+          "pts": 1
         },
         {
           "txt" : "No, I do not.",
-          "pts" : 2
+          "pts" : 4
         }
       ]
     },
@@ -157,19 +157,19 @@
       "choices": [
         {
           "txt": "A construction paper feather headband (Indian! Get it?)",
-          "pts": 1 
+          "pts": 4
         },
         {
           "txt": "Edward Scissorhands",
-          "pts": 4 
+          "pts": 1 
         },
         {
           "txt": "Utensils",
-          "pts": 2
+          "pts": 3
         },
         {
           "txt": "A princess. Duh. ",
-          "pts": 3
+          "pts": 2
         }
       ]
     },
@@ -179,19 +179,19 @@
       "choices": [
         {
           "txt": "<img src='http://s3.amazonaws.com/date_shruti/daria1.gif'>",
-          "pts": 4 
-        },
+          "pts": 1 
+        }, 
         {
           "txt": "<img src='http://s3.amazonaws.com/date_shruti/girl.gif'>",
-          "pts": 3 
+          "pts": 2 
         },
         {
           "txt": "<img src='http://s3.amazonaws.com/date_shruti/shaq.gif'>",
-          "pts": 2
+          "pts": 3
         },
         {
           "txt": "<img src='http://s3.amazonaws.com/date_shruti/boy.gif'>",
-          "pts": 1
+          "pts": 4
         }
       ]
     },
@@ -201,19 +201,19 @@
       "choices": [
         {
           "txt": "Benedict Cumberbatch: I might have quirky looks, but I can rock a suit and melt your heart and panties in a witty t&#234;te-&#224;-t&#234;te. ",
-          "pts": 1 
+          "pts": 4
         },
         {
           "txt": "Ryan Gosling: I'm the boy-next-door with a ukulele who'll build you a house and kiss you in the rain. Hey, girl. ",
-          "pts": 2 
+          "pts": 3 
         },
         {
           "txt": "Jason Sudeikis: I tend to fly in under the radar, but my hilarity and humility give me multi-date staying power.",
-          "pts": 3
+          "pts": 2
         },
         {
           "txt": "Channing Tatum: I am surprisingly intelligent and charming behind this “beefcake drug dealer” facade. ",
-          "pts": 4
+          "pts": 1
         }
       ]
     },
@@ -223,19 +223,19 @@
       "choices": [
         {
           "txt": "A beach with real waves; but somewhere with hiking, not a touristy luxury place. ",
-          "pts": 1 
+          "pts": 4
         },
         {
           "txt": "Seeing the Northern Lights in Iceland or Greenland. Maaaagic!",
-          "pts": 2 
+          "pts": 3 
         },
         {
           "txt": "Paris. I want to eat a block of cheese and drink a magnum of wine errday, son.",
-          "pts": 3
+          "pts": 2
         },
         {
           "txt": "Detroit. No, I’m serious! I prefer real culture, not tourist traps.",
-          "pts": 4
+          "pts": 1
         }
       ]
     },
@@ -245,19 +245,19 @@
       "choices": [
         {
           "txt": "Shrutster",
-          "pts": 3 
+          "pts": 2
         },
         {
           "txt": "Shruts",
-          "pts": 4 
+          "pts": 1 
         },
         {
           "txt": "Shruti Fruiti",
-          "pts": 1
+          "pts": 4
         },
         {
           "txt": "Shrums",
-          "pts": 2
+          "pts": 3
         }
       ]
     },
@@ -267,19 +267,19 @@
       "choices": [
         {
           "txt": "Hairy legs. Sorry, I’m just not that enlightened.",
-          "pts": 3 
-        },
-        {
-          "txt": "I don’t really like to make hard and fast rules.",
-          "pts": 1 
-        },
-        {
-          "txt": "Is lying too obvious? Lying is a total dealbreaker.",
           "pts": 2
         },
         {
+          "txt": "I don’t really like to make hard and fast rules.",
+          "pts": 4 
+        },
+        {
+          "txt": "Is lying too obvious? Lying is a total dealbreaker.",
+          "pts": 3
+        },
+        {
           "txt": "Rom coms, as in <span>me</span> watching them with <span>you</span>. I have dignity. ",
-          "pts": 4
+          "pts": 1
         }
       ]
     },
@@ -289,19 +289,19 @@
       "choices": [
         {
           "txt": "Can I return them if they’re jerks? Just kidding. Sort of.",
-          "pts": 3 
+          "pts": 2
         },
         {
           "txt": "No thank you. Not. My. Jam.",
-          "pts": 4 
+          "pts": 1 
         },
         {
           "txt": "I’m not sure if I’ll ever be totally sure, but it might be nice.",
-          "pts": 1
+          "pts": 4
         },
         {
           "txt": "Great! I don’t want to end up like those weirdo childless couples that attend metaphysics conferences.",
-          "pts": 2
+          "pts": 3
         }
       ]
     },
@@ -311,19 +311,19 @@
       "choices": [
         {
           "txt": "&ldquo;Once bitten, Twice Shy&rdquo;",
-          "pts": 3 
-        },
-        {
-          "txt": "&ldquo;I Was Made For Lovin' You&rdquo;",
-          "pts": 1 
-        },
-        {
-          "txt": "&ldquo;Every Rose Has Its Thorn&rdquo;",
           "pts": 2
         },
         {
+          "txt": "&ldquo;I Was Made For Lovin' You&rdquo;",
+          "pts": 4 
+        },
+        {
+          "txt": "&ldquo;Every Rose Has Its Thorn&rdquo;",
+          "pts": 3
+        },
+        {
           "txt": " &ldquo;Burn In Hell&rdquo;",
-          "pts": 4
+          "pts": 1
         }
       ]
     },
@@ -333,19 +333,19 @@
       "choices": [
         {
           "txt": "I need regularly occurring time to reflect and digest.",
-          "pts": 1 
+          "pts": 4 
         },
         {
           "txt": "That's what long poos are for. ",
-          "pts": 2 
+          "pts": 3 
         },
         {
           "txt": "I always have something going; music, TV, radio. When it’s too quiet I get antsy.",
-          "pts": 2
+          "pts": 3
         },
         {
           "txt": "I like the occasional time to meditate, but I rarely find the time. Have you met this city?",
-          "pts": 4
+          "pts": 1
         }
       ]
     },
@@ -355,19 +355,19 @@
       "choices": [
         {
           "txt": "The Berenstain Bears and the Messy Room ",
-          "pts": 2 
-        },
-        {
-          "txt": "A Room with a View",
-          "pts": 1 
-        },
-        {
-          "txt": "A View From a Bridge",
           "pts": 3
         },
         {
+          "txt": "A Room with a View",
+          "pts": 4 
+        },
+        {
+          "txt": "A View From a Bridge",
+          "pts": 2
+        },
+        {
           "txt": "The Bridges of Madison County",
-          "pts": 4
+          "pts": 1
         }
       ]
     }
