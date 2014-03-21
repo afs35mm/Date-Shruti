@@ -193,7 +193,7 @@ DS.App = (function(){
 			}else if( config.score < 35 && config.score >= 17 ){
 				//Worst date, no contact form
 				//TODO: Take out of appendContactForm function...
-				$('#questions').html('<div class="cf copy noDateForYou"><p>dsklfhkshdf ksdfh skfh skfh skfh skfh sfkhs</p><div class="cumberland"><img src ="/assets/img/giphy.gif" /></div></div>');
+				$('#questions').html('<div class="cf copy noDateForYou"><p>Valiant effort, sir, but you didn\'t measure up. Here\'s some sweet, sweet Cumberbatch to cushion the blow.</p><div class="cumberland"><img src ="/assets/img/giphy.gif" /></div></div>');
 				return;
 			}else{
 				dateType = 'unknown';
